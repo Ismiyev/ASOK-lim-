@@ -11,7 +11,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("🙁 Onsuzda Qrupa əlavə eliyəmmiyəcəysən", url=f"http://t.me/BanditosSozBot?startgroup=new")
+        InlineKeyboardButton("➕️ Məni Grupa Əlavə Et➕️", url=f"http://t.me/ASOsozutap_bot?startgroup=new")
     ],
     [
         InlineKeyboardButton("Werab Qoxulu ✈️", url="https://t.me/WerabliAnlar"),
@@ -85,7 +85,7 @@ async def kelimeoyun(c:Client, m:Message):
 🔎 İpucu: 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Uzunluq : {int(len(kelime_list)/2)} 
 
-✏️ Qarışıq hərflərdən düzgün sözü tapın !", reply_markup=kanal)
+✏️ Qarışıq hərflərdən düzgün sözü tapın @ASOresmi 🇦🇿
         """
         await c.send_message(m.chat.id, text)
         
