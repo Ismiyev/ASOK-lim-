@@ -11,33 +11,33 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("➕️ Məni Grupa Əlavə Et➕️", url=f"http://t.me/ASOsozutap_bot?startgroup=new")
+        InlineKeyboardButton("➕ Qrupa Əlavə Et", url=f"http://t.me/SozTapmacaRobot?startgroup=new")
     ],
     [
-        InlineKeyboardButton("Werab Qoxulu ✈️", url="https://t.me/WerabliAnlar"),
-        InlineKeyboardButton("Owner 👨🏻‍💻", url="https://t.me/ismiyev95"),
+        InlineKeyboardButton("**Developer | 🧑🏻‍💻 Creator**", url="https://t.me/Axhmedov7"),
+        InlineKeyboardButton("**Chat 🎉**", url="https://t.me/RichSuppp"),
     ]
 ])
 
 
 START = """
-**• Salam ⚡
+**• Salam 👋
 
-• Mən Söz 𓄂𝙰𝚂𝙾🇦🇿 Federasiyasının Rəsmi hazırlanmış oyun Botuyam 🎮 
+• Mən Söz Oyun Botuyam 🎮 
 
 • Əyləncəli vaxt Keçirmək üçün Mənimlə Oynaya bilərsən ✍🏻 
 
-• Bot @ASOsozutap_bot istediyiniz qrupa atıb mənimlə vaxtınızı əyləncəli keçirə bilərsiz🙂 @WerabliAnlar . 🌪️**
+• Oynamaq üçün məni bir qrupa əlavə edib admin etmək lazımdır . 💭**
 
-➤ Məlumat üçün 👉 /komek bas. Komandalar Asand və Rahatdır. 
+➤ Bilgi üçün 👉 /komek Tıklayın. Komutlar Asant və Rahatdır. 
 """
 
 HELP = """
-**✌️ Komandalar Menyusuja Xoşgəldin.📌**
-/oyun - Oyunu Başlatmaq üçün..
-/kec - Cəmi 3 keçid Haqqınız Var.. 
-/reyting - Oyuncular arasındaki Xal məlumatı..
-/dayan - Oyundan çıxmaq üçün lazımlı olan komandasıdır.. 
+**✌️ Komutlar Menusuna XoşGəldiniz.**
+/basla - Oyunu Başladmak üçün..
+/pas - Cəmi 3 keçid Haqqınız Var.. 
+/reyting - Oyuncular arasındaki Xal bilgisi..
+/dayandir - Oyundan çıxmaq üçün lazımlı olan komutdur.. 
 """
 
 # Komutlar. 
@@ -50,7 +50,7 @@ async def help(bot, message):
   await message.reply_photo("https://i.ibb.co/K6QTywd/images-17.jpg",caption=HELP) 
 
 # Oyunu başlat. 
-@Client.on_message(filters.command(basla")) 
+@Client.on_message(filters.command("basla")) 
 async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False
@@ -61,14 +61,14 @@ async def kelimeoyun(c:Client, m:Message):
         aktif = False
 
     if aktif:
-        await m.reply("**❗ Oyun Qrupunuzda Artıq Davam Edir ✍🏻 \n Oyunu dayandırmaq üçün yazın /dayan")
+        await m.reply("**❗ Oyun Qrupunuzda Artıq Davam Edir ✍🏻 \n Oyunu dayandırmaq üçün yazın /dayandir")
     else:
-        await m.reply(f"**{m.from_user.mention}** Tərəfindən! \nQarışıq Söz Tapma Oyunu Başladı .\n\nBol Şanslar @ASOresmi 🇦🇿 !", reply_markup=kanal)
+        await m.reply(f"**{m.from_user.mention}** Tərəfindən! \nKəlimə Tapma Oyunu Başladı .\n\nBol Şanslar !", reply_markup=kanal)
         
         oyun[m.chat.id] = {"kelime":kelime_sec()}
         oyun[m.chat.id]["aktif"] = True
         oyun[m.chat.id]["round"] = 1
-        oyun[m.chat.id]["kec"] = 0
+        oyun[m.chat.id]["pass"] = 0
         oyun[m.chat.id]["oyuncular"] = {}
         
         kelime_list = ""
@@ -85,7 +85,7 @@ async def kelimeoyun(c:Client, m:Message):
 🔎 İpucu: 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Uzunluq : {int(len(kelime_list)/2)} 
 
-✏️ Qarışıq hərflərdən düzgün sözü tapın @ASOresmi 🇦🇿
+✏️ Qarışıq hərflərdən düzgün sözü tapın
         """
         await c.send_message(m.chat.id, text)
         
