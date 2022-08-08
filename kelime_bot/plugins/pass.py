@@ -40,8 +40,11 @@ async def keccc(c:Client, m:Message):
 🔎 İ𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Uzunluq: {int(len(kelime_list)/2)} 
 
-✏️ Qarışıq hərflərdən düzgün sözü tapın @ASOresmi 👨🏻‍💻 !", reply_markup=kanal)
-            """
+✏️ Qarışıq hərflərdən düzgün sözü tapın @ASOresmi 👨🏻‍💻 
+      
+      keyboard = InlineKeyboardMarkup([
+                       InlineKeyboardButton("ASO🇦🇿 Rəsmi 👨🏻‍💻", url="https://t.me/ASOresmi"),
+          """
             await c.send_message(m.chat.id, text)
             
         else:
