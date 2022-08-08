@@ -14,8 +14,8 @@ keyboard = InlineKeyboardMarkup([
         InlineKeyboardButton("🙁 Onsuzda Qrupa əlavə eliyəmmiyəcəysən", url=f"http://t.me/BanditosSozBot?startgroup=new")
     ],
     [
-        InlineKeyboardButton("Qrup 🐊", url="https://t.me/WerabliAnlar"),
-        InlineKeyboardButton("Sahib ⚜️", url="https://t.me/ismiyev95"),
+        InlineKeyboardButton("Werab Qoxulu ✈️", url="https://t.me/WerabliAnlar"),
+        InlineKeyboardButton("Owner 👨🏻‍💻", url="https://t.me/ismiyev95"),
     ]
 ])
 
@@ -63,7 +63,7 @@ async def kelimeoyun(c:Client, m:Message):
     if aktif:
         await m.reply("**❗ Oyun Qrupunuzda Artıq Davam Edir ✍🏻 \n Oyunu dayandırmaq üçün yazın /dayan")
     else:
-        await m.reply(f"**{m.from_user.mention}** Tərəfindən! \nQarışıq Söz Tapma Oyunu Başladı .\n\nBol Şanslar @ASOresmi !", reply_markup=kanal)
+        await m.reply(f"**{m.from_user.mention}** Tərəfindən! \nQarışıq Söz Tapma Oyunu Başladı .\n\nBol Şanslar @ASOresmi 🇦🇿 !", reply_markup=kanal)
         
         oyun[m.chat.id] = {"kelime":kelime_sec()}
         oyun[m.chat.id]["aktif"] = True
