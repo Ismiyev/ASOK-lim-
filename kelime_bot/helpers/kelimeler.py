@@ -1,5 +1,5 @@
 import random
-kelimeler = ["gözəl ","məlumat ","sual","sağlam ","buraxmaq","yaraşıqlı","su","etmək","işlədmək","demək","görmək",
+kelimeler = ["gözəl ", "məlumat ", "sual", "sağlam ", "buraxmaq", "yaraşıqlı", "su", "etmək", "işlədmək", "demək", "görmək",
              "yenidən", "həssas", "sanki", "manat", "oynamaq", "çiçək", "şəhər", "yüksəlmək", "çabalamaq", "varlıq", "diyar",
              "güvən", "gərək", "müalicə", "bir", "rahat", "soyuq", "hava", "kitab", "paylaşmaq", "hesap", "vücud",
              "torpaq", "kitab", "sistem", "xoşallanmaq", "çəkilmək", "texnik", "yaxınlaşmaq", "il", "tarix", "dəqiq", "qaqaş",
@@ -96,7 +96,7 @@ kelimeler = ["gözəl ","məlumat ","sual","sağlam ","buraxmaq","yaraşıqlı",
              'saqqal', 'biçarə', 'çarəsiz', 'güvən', 'marka', 'yarpaq', 'yararlı', 'oxatan', 'bərəkət', 'cırmaq', 'düşünülmək',
              'könül', 'xasiyyət', 'irəliləmək', 'şərab', 'yuxarı', 'alt', 'düzəltmək', 'kassir', 'hədis', 'təmiz',
              'vitamin', 'qürurlanmaq', 'təsirlik', 'fəxr', 'yumurta', 'aşxana', 'jurnal', 'yaş', 'kəsdirmək', 'qruz', 'xəbərdarlıq',
-             'xəbərdar' 'çarıq' 'şkaf'
+             'xəbərdar', 'çarıq', 'şkaf',
              ]
 
 
