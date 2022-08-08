@@ -43,7 +43,7 @@ HELP = """
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_photo("https://telegra.ph/file/0a4f06f27de1ae61784fa.jpg",caption=START,reply_markup=keyboard)
+  await message.reply_photo("https://i.ibb.co/K6QTywd/images-17.jpg",caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("komek"))
 async def help(bot, message):
