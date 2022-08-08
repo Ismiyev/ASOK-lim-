@@ -8,8 +8,8 @@ from kelime_bot import *
 
 
 
-@Client.on_message(filters.command("kec") & ~filters.private & ~filters.channel)
-async def keccc(c:Client, m:Message):
+@Client.on_message(filters.command("pas") & ~filters.private & ~filters.channel)
+async def passs(c:Client, m:Message):
     global oyun
     
     try:
@@ -19,9 +19,9 @@ async def keccc(c:Client, m:Message):
         aktif = False
 
     if aktif:
-        if oyun[m.chat.id]["kec"] < 3:
-            oyun[m.chat.id]["kec"] += 1 
-            await c.send_message(m.chat.id,f"❗ Cəmi 3 keçid Haqqınız Var!\n➡️ Kelime gecişi çıxdı !\n✏️ Doğru cavab idi : **<code>{oyun[m.chat.id]['kelime']}</code>**")
+        if oyun[m.chat.id]["pass"] < 3:
+            oyun[m.chat.id]["pass"] += 1 
+            await c.send_message(m.chat.id,f"❗ Cəmi 3 keçid Haqqınız Var!\n➡️ Kəlimə Geçişi Çıxtı !\n✏️ Doğru kəlimə : **<code>{oyun[m.chat.id]['kelime']}</code>**")
             
             oyun[m.chat.id]["kelime"] = kelime_sec()
             oyun[m.chat.id]["aktif"] = True
@@ -40,11 +40,11 @@ async def keccc(c:Client, m:Message):
 🔎 İ𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Uzunluq: {int(len(kelime_list)/2)} 
 
-✏️ Qarışıq hərflərdən düzgün sözü tapın @ASOresmi 👨🏻‍💻 
-                 """
+✏️ Qarışıq hərflərdən düzgün sözü tapın
+            """
             await c.send_message(m.chat.id, text)
             
         else:
-            await c.send_message(m.chat.id, f"<code>**❗ Geçiş Düz Saxlanıldı! </code> \n Oyunu dayandırmaq üçün /dayan yazıb dayandıra Bilərsiniz✍🏻**")
+            await c.send_message(m.chat.id, f"<code>**❗ Geçiş Düz Saxlanıldı! </code> \n Oyunu diyandırmaq üçün /dayandir yazıb diyandıra Bilərsiniz✍🏻**")
     else:
-        await m.reply(f"❗ **Qrupunuzda aktiv oyun tapılmadı!\n Yeni bir oyuna başlamaq üçün /oyun yazabilərsiniz.✍🏻**")
+        await m.reply(f"❗ **Qrupunuzda aktif oyun tapılmadı!\n Yeni bir oyuna başlamaq üçün /basla yazabilərsiniz.✍🏻**")
