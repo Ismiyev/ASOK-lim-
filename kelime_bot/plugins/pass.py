@@ -40,11 +40,11 @@ async def keccc(c:Client, m:Message):
 🔎 İ𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Uzunluq: {int(len(kelime_list)/2)} 
 
-✏️ Qarışıq hərflərdən düzgün sözü tapın @ASOresmi
+✏️ Qarışıq hərflərdən düzgün sözü tapın @ASOresmi 👨🏻‍💻
             """
             await c.send_message(m.chat.id, text)
             
         else:
-            await c.send_message(m.chat.id, f"<code>**❗ Geçiş Düz Saxlanıldı! </code> \n Oyunu diyandırmaq üçün /dayandir yazıb diyandıra Bilərsiniz✍🏻**")
+            await c.send_message(m.chat.id, f"<code>**❗ Geçiş Düz Saxlanıldı! </code> \n Oyunu dayandırmaq üçün /dayan yazıb dayandıra Bilərsiniz✍🏻**")
     else:
         await m.reply(f"❗ **Qrupunuzda aktiv oyun tapılmadı!\n Yeni bir oyuna başlamaq üçün /oyun yazabilərsiniz.✍🏻**")
