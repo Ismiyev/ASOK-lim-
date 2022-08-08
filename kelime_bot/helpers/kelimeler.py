@@ -17,7 +17,7 @@ kelimeler = ["gözəl ","məlumat ","sual","sağlam ","buraxmaq","yaraşıqlı",
              'ər', 'qabıq', 'gözləmək', 'ilk', 'burun', 'başlanğıc', 'son', 'çətin', 'şəkil', 'vacib', 'yüz', 'yağış', 'görmək', 'gündüz',
              'alt', 'gətirmək', 'işçi', 'çünki', 'tərəf', 'indi', 'adam', 'onun', 'qar', 'əks', 'qapı', 'səs', 'həmkar',
              'doğru', 'durmaq', 'qız', 'bütün', 'çəkmək', 'danışmaq', 'pul', 'düşmək', 'ata', 'az', 'bəzi', 'baba', 'hayat',
-             'sadəcə
+             'sadəcə',
              ', 'kiçik', 'yüksəlmək', 'ağartı', 'ay', 'akvarium', 'açar', 'sevmək', 'yenə', 'sağlamaq', 'nəticə', 'istifadəçi', 'çöl',
              'ad', 'məsələ', 'saniyə', 'döndərmək', 'açmaq', 'oturmaq', 'gül', 'qol', 'dəqiqə', 'saat', 'yaş', 'problem', 'ağac',
              'sahil', 'sıra', 'cərgə', 'hasar', 'gündəlik', 'atmaq', 'tutmaq', 'diş', 'tərcümə', 'qaçmaq', 'yorğun', 'reklam', 'misal',
