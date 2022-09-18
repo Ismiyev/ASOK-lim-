@@ -10,7 +10,7 @@ from kelime_bot import *
 
 
 @Client.on_message(filters.command("dayan") & ~filters.private & ~filters.channel)
-async def dayan(c:Client, m:Message):
+async def stop(c:Client, m:Message):
     global oyun
     
     siralama = []
@@ -21,6 +21,6 @@ async def dayan(c:Client, m:Message):
     for i in siralama:
         siralama_text += i + "\n"     
     
-    await c.send_message(m.chat.id, f"**{m.from_user.mention}** Tərəfindən Oyun Sonlandırıldı✨\n\nYeni Oyuna Başlamaq Üçün /oyun Yaza bilərsiniz\n\n 📝 Xal Reytingi  :\n\n{siralama_text}")
+    await c.send_message(m.chat.id, f"**{m.from_user.mention}** Tərəfindən Oyun Bitirildi✨\n\nYeni Oyuna Başlamaq Üçün /oyun Yaza bilərsiniz\n\n 📝 Xal Reytingi  :\n\n{siralama_text}")
     oyun[m.chat.id] = {}
     
